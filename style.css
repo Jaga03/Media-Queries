@@ -1,0 +1,298 @@
+@import url('https://fonts.cdnfonts.com/css/aqua-grotesque');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    background-image: url("images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+button{
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: #fbfcfd;
+    border: 2px solid white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Aqua Grotesque', sans-serif;
+    text-shadow: 6px 6px 6px rgb(0, 242, 255);
+    text-align: center;
+}
+
+.content-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-button button{
+    padding: 25px 35px;
+    font-size: 25px;
+    border-radius: 35px;
+}
+
+.sidebar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: rgb(6,6,96);
+    border-left: 1px solid #ffffff;
+}
+
+.sidebar img{
+    width: 25px;
+    height: 25px;
+}
+
+.useful-link{
+    position: absolute;
+    bottom: 10px;
+}
+
+.social-link{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.menu{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.social-link, .useful-link{
+    margin-left: 10px;
+}
+.bubble{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 20px;
+}
+.bubble img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+@keyframes bubble {
+    0%{
+      opacity: 0;
+      transform: translateY(0);  
+    }
+
+    50%{
+      opacity: 1 ;
+    }
+
+    70%{
+      opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(-90vh);
+    }
+
+}
+
+.bubble img:nth-child(1){
+    width: 25px;
+    height: 25px;
+    animation-delay: 2s;
+}
+
+.bubble img:nth-child(3){
+    width: 35px;
+    height: 35px;
+    animation-delay: 4s;
+}
+.bubble img:nth-child(4){
+    width: 40px;
+    height: 40px;
+    animation-delay: 1s;
+}
+.bubble img:nth-child(5){
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+}
+.bubble img:nth-child(6){
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+}
+
+@media screen and (max-width:576px){
+    .head{
+        background-image: url("images/mobile-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #ffffff;
+        font-size: 15px;
+        font-family: 'Aqua Grotesque', sans-serif;
+        text-shadow: 6px 6px 6px rgb(0, 242, 255);
+        text-align: center;
+    }
+        .content-button{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .content-button button{
+            padding: 10px 20px;
+            font-size: 15px;
+            border-radius: 15px;
+        }
+        .bubble{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-left: 20px;
+        }
+
+        .sidebar{
+            position: absolute;
+            bottom: 0;
+            top: auto;
+            height: 70px;
+            width: 100%;
+            background: rgb(10,186,203);
+            background: linear-gradient(90deg, rgb(8, 145, 158) 43%, rgba(12, 122, 249, 0.989) 65%);
+            border-top: 2px solid #ffffff;
+        }
+        .social-link{
+            position: absolute;
+            left:35%;
+            transform: translateX(-50%);
+            transform: translateY(-50%);
+            
+    }
+    .useful-link{
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .sidebar img{
+        width: 40px;
+        height: 40px;
+    }
+    .menu{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 20px;
+    }
+}
+    
+
+@media screen and (min-width:577px) and (max-width:1080px){
+    .head{
+        background-image: url("images/tablet-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Aqua Grotesque', sans-serif;
+        text-shadow: 6px 6px 6px rgb(0, 242, 255);
+        text-align: center;
+    }
+    .content-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .content-button button{
+        padding: 15px 25px;
+        font-size: 25px;
+        border-radius: 25px;
+    }
+    .bubble{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .sidebar{
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        height: 70px;
+        width: 100%;
+        background: rgb(9, 159, 173);
+        border-top: 2px solid #ffffff;
+}
+.social-link{
+    position: absolute;
+    left:40%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    
+}
+.useful-link{
+position: absolute;
+right: 0;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+.sidebar img{
+width: 40px;
+height: 40px;
+}
+.menu{
+margin-top: 20px;
+margin-left: 10px;
+width: 20px;
+}
+}
